@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>layout1</title>
+  <style>
+    .layout{
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .layout:after {
+      content: '';
+      display: block;
+      clear: both;
+    }
+    .aside{
+      width: 200px;
+      height: 500px;
+    }
+    .aside.a1{
+      background: red;
+      float: left;
+    }
+    .aside.a2{
+      background: blue;
+      float: right;
+    }
+    .content{
+      margin-left: 210px;
+      margin-right: 210px;
+      background: pink;
+      height: 600px;
+    }
+  </style>
+</head>
+<body>
+  <div class="layout">
+    <div class="aside a1"></div>
+    <div class="aside a2"></div>
+    <div class="content"></div>
+  </div>
+</body>
+</html>
